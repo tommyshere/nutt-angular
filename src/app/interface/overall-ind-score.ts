@@ -4,4 +4,5 @@ export interface OverallIndScore {
   fridayScore: number;
   saturdayScore: number;
   sundayScore: number;
+  overallScore: number;
 }
