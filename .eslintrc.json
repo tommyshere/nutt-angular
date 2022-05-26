@@ -1,3 +1,5 @@
+// https://javascript.plainenglish.io/how-to-configure-eslint-and-prettier-on-angular-application-87dbd767369c
+// https://dev.to/eneajaho/configure-prettier-and-eslint-with-angular-526c
 {
   "root": true,
   "ignorePatterns": [
