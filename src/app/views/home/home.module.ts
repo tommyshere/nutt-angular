@@ -4,20 +4,16 @@ import { SharedModule } from '../../shared/shared.module';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { DailyboardComponent } from './dailyboard/dailyboard.component';
 import { LeaderboardService } from './leaderboard/leaderboard.service';
-
-
+import { PlayerDetailsComponent } from './player-details/player-details.component';
 
 @NgModule({
-  providers: [
-    LeaderboardService
-  ],
+  providers: [LeaderboardService],
   declarations: [
     HomeComponent,
     LeaderboardComponent,
-    DailyboardComponent
+    DailyboardComponent,
+    PlayerDetailsComponent,
   ],
-  imports: [
-    SharedModule
-  ]
+  imports: [SharedModule],
 })
-export class HomeModule { }
+export class HomeModule {}

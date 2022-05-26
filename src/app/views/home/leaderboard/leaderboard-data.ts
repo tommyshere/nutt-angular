@@ -74,4 +74,4 @@ export const leaderboard: OverallIndScore[] = [
     sundayScore: 14,
     overallScore: 124,
   },
-]
+];

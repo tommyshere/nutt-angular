@@ -7,12 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
-import {HomeModule} from './views/home/home.module';
+import { HomeModule } from './views/home/home.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -20,9 +18,9 @@ import {HomeModule} from './views/home/home.module';
     AppRoutingModule,
     CoreModule,
     SharedModule,
-    HomeModule
+    HomeModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
