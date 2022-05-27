@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./player-score.component.scss'],
 })
 export class PlayerScoreComponent implements OnInit {
+  public displayedColumns: string[] = [
+    'playerName',
+    'playerScore',
+    'guess',
+    'score',
+  ];
   constructor() {}
 
   ngOnInit(): void {}

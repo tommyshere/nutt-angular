@@ -7,9 +7,10 @@ import { LeaderboardService } from './leaderboard/leaderboard.service';
 import { PlayerDetailsComponent } from './dailyboard/player-details/player-details.component';
 import { PlayerScoreComponent } from './dailyboard/player-score/player-score.component';
 import { LeaderboardTableComponent } from './leaderboard/leaderboard-table/leaderboard-table.component';
+import { DailyboardService } from './dailyboard/dailyboard.service';
 
 @NgModule({
-  providers: [LeaderboardService],
+  providers: [LeaderboardService, DailyboardService],
   declarations: [
     HomeComponent,
     LeaderboardComponent,
