@@ -4,7 +4,8 @@ import { SharedModule } from '../../shared/shared.module';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { DailyboardComponent } from './dailyboard/dailyboard.component';
 import { LeaderboardService } from './leaderboard/leaderboard.service';
-import { PlayerDetailsComponent } from './player-details/player-details.component';
+import { PlayerDetailsComponent } from './dailyboard/player-details/player-details.component';
+import { PlayerScoreComponent } from './dailyboard/player-score/player-score.component';
 
 @NgModule({
   providers: [LeaderboardService],
@@ -13,6 +14,7 @@ import { PlayerDetailsComponent } from './player-details/player-details.componen
     LeaderboardComponent,
     DailyboardComponent,
     PlayerDetailsComponent,
+    PlayerScoreComponent,
   ],
   imports: [SharedModule],
 })

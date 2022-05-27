@@ -4,12 +4,30 @@
       <div class="col-xl-12">
         <mat-tab-group mat-align-tabs="center">
           <mat-tab label="Leaderboard">
-            <app-leaderboard></app-leaderboard>
+            <ng-template matTabContent>
+              <app-leaderboard></app-leaderboard>
+            </ng-template>
           </mat-tab>
-          <mat-tab label="Sunday">Sunday Scores Goes Here</mat-tab>
-          <mat-tab label="Saturday">Saturday Scores Goes Here</mat-tab>
-          <mat-tab label="Friday">Friday Scores Goes Here</mat-tab>
-          <mat-tab label="Thursday">Thursday Scores Goes Here</mat-tab>
+          <mat-tab label="Sunday">
+            <ng-template matTabContent>
+              <app-dailyboard day="Sunday"></app-dailyboard>
+            </ng-template>
+          </mat-tab>
+          <mat-tab label="Saturday">
+            <ng-template matTabContent>
+              <app-dailyboard></app-dailyboard>
+            </ng-template>
+          </mat-tab>
+          <mat-tab label="Friday">
+            <ng-template matTabContent>
+              <app-dailyboard></app-dailyboard>
+            </ng-template>
+          </mat-tab>
+          <mat-tab label="Thursday">
+            <ng-template matTabContent>
+              <app-dailyboard></app-dailyboard>
+            </ng-template>
+          </mat-tab>
         </mat-tab-group>
       </div>
     </div>
