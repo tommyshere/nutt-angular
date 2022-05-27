@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-dailyboard',
@@ -6,10 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./dailyboard.component.scss'],
 })
 export class DailyboardComponent implements OnInit {
-  @Input() day = '';
   constructor() {}
 
-  ngOnInit(): void {
-    console.log(this.day);
-  }
+  ngOnInit(): void {}
 }

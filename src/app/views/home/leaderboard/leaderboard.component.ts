@@ -9,16 +9,8 @@ import { LeaderboardService } from './leaderboard.service';
   styleUrls: ['./leaderboard.component.scss'],
 })
 export class LeaderboardComponent implements OnInit {
-  public leaderboard!: OverallIndScore[];
-  public displayedColumns: string[] = [
-    'name',
-    'thursday',
-    'friday',
-    'saturday',
-    'sunday',
-    'overall',
-  ];
   private _rx!: Subscription;
+  public leaderboard!: OverallIndScore[];
 
   constructor(private leaderboardService: LeaderboardService) {}
 
