@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { PlayerScore } from '../../../../interface';
 
 @Component({
   selector: 'app-player-score',
@@ -6,12 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./player-score.component.scss'],
 })
 export class PlayerScoreComponent implements OnInit {
+  @Input() myScore!: PlayerScore[];
   public displayedColumns: string[] = [
     'playerName',
     'playerScore',
     'guess',
     'score',
   ];
+
   constructor() {}
 
   ngOnInit(): void {}
