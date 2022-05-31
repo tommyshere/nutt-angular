@@ -9,10 +9,10 @@ import { PlayerScore } from '../../../../interface';
 export class PlayerScoreComponent implements OnInit {
   @Input() myScore!: PlayerScore[];
   public displayedColumns: string[] = [
-    'playerName',
+    'golferName',
+    'golferScore',
+    'playerGuess',
     'playerScore',
-    'guess',
-    'score',
   ];
 
   constructor() {}

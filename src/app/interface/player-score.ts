@@ -1,6 +1,6 @@
 export interface PlayerScore {
-  playerName: string;
+  golferName: string;
+  golferScore: number;
+  playerGuess: number;
   playerScore: number;
-  guess: number;
-  score: number;
 }
