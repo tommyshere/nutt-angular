@@ -6,5 +6,7 @@
         Overall Score: {{ detail.overallScore }}
       </mat-panel-description>
     </mat-expansion-panel-header>
+    <app-player-score-table
+      [tableData]="detail.playDetails"></app-player-score-table>
   </mat-expansion-panel>
 </mat-accordion>

@@ -5,9 +5,9 @@ import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { DailyboardComponent } from './dailyboard/dailyboard.component';
 import { LeaderboardService } from './leaderboard/leaderboard.service';
 import { PlayerDetailsComponent } from './dailyboard/player-details/player-details.component';
-import { PlayerScoreComponent } from './dailyboard/player-score/player-score.component';
 import { LeaderboardTableComponent } from './leaderboard/leaderboard-table/leaderboard-table.component';
 import { DailyboardService } from './dailyboard/dailyboard.service';
+import { PlayerScoreTableComponent } from './dailyboard/player-score-table/player-score-table.component';
 
 @NgModule({
   providers: [LeaderboardService, DailyboardService],
@@ -16,8 +16,8 @@ import { DailyboardService } from './dailyboard/dailyboard.service';
     LeaderboardComponent,
     DailyboardComponent,
     PlayerDetailsComponent,
-    PlayerScoreComponent,
     LeaderboardTableComponent,
+    PlayerScoreTableComponent,
   ],
   imports: [SharedModule],
 })
