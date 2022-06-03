@@ -4,7 +4,7 @@
 @import 'assets/sass/colors.scss';
 
 $nutt-primary: mat.define-palette($primary);
-$nutt-accent: mat.define-palette($accent, A200, A100, A400);
+$nutt-accent: mat.define-palette($accent);
 
 $nutt-theme: mat.define-light-theme((
   color: (

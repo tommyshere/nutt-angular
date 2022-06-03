@@ -20,7 +20,6 @@ export class DailyboardComponent implements OnInit {
       this.dbService.getMyDailyScore(),
       this.dbService.getOtherPlayerDetails()
     ).subscribe(data => {
-      console.log(data);
       this.myData = data[0];
       this.otherPlayerDetails = data[1];
     });
