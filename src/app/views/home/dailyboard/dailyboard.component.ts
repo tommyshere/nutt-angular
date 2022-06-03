@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription, zip } from 'rxjs';
 import { DailyboardService } from './dailyboard.service';
-import { PlayerDetail, PlayerScore } from '../../../interface';
+import { PlayerDetail } from '../../../interface';
 
 @Component({
   selector: 'app-dailyboard',
@@ -10,7 +10,7 @@ import { PlayerDetail, PlayerScore } from '../../../interface';
 })
 export class DailyboardComponent implements OnInit {
   private _rx!: Subscription;
-  public myScore!: PlayerScore[];
+  public myData!: PlayerDetail;
   public otherPlayerDetails!: PlayerDetail[];
 
   constructor(private dbService: DailyboardService) {}
@@ -21,7 +21,7 @@ export class DailyboardComponent implements OnInit {
       this.dbService.getOtherPlayerDetails()
     ).subscribe(data => {
       console.log(data);
-      this.myScore = data[0];
+      this.myData = data[0];
       this.otherPlayerDetails = data[1];
     });
   }

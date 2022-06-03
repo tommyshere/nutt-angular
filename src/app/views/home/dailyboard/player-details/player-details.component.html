@@ -3,7 +3,10 @@
     <mat-expansion-panel-header>
       <mat-panel-title> {{ detail.name }} </mat-panel-title>
       <mat-panel-description>
-        Overall Score: {{ detail.overallScore }}
+        <span class="overall-score"
+          >Overall Score: {{ detail.overallScore }}</span
+        >
+        <span class="daily-score">Daily Score: {{ detail.dailyScore }}</span>
       </mat-panel-description>
     </mat-expansion-panel-header>
     <app-player-score-table

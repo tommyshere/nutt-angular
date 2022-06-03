@@ -1,6 +1,6 @@
-import { PlayerScore } from '../../../interface';
+import { PlayerDetail } from '../../../interface';
 
-export const userGuess: PlayerScore[] = [
+const DATA = [
   {
     golferName: 'Scottie Scheffler',
     golferScore: -1,
@@ -60,5 +60,27 @@ export const userGuess: PlayerScore[] = [
     golferScore: 0,
     playerGuess: 0,
     playerScore: -10,
+  },
+];
+
+export const myData: PlayerDetail = {
+  name: 'Brooks DuBose',
+  dailyScore: 21,
+  overallScore: 21,
+  playDetails: DATA,
+};
+
+export const otherPlayerData: PlayerDetail[] = [
+  {
+    name: 'Robert Wylie',
+    dailyScore: -6,
+    overallScore: -6,
+    playDetails: DATA,
+  },
+  {
+    name: 'Scott Strickland',
+    dailyScore: 0,
+    overallScore: 0,
+    playDetails: DATA,
   },
 ];
