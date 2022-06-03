@@ -8,6 +8,7 @@ import { PlayerDetailsComponent } from './dailyboard/player-details/player-detai
 import { LeaderboardTableComponent } from './leaderboard/leaderboard-table/leaderboard-table.component';
 import { DailyboardService } from './dailyboard/dailyboard.service';
 import { PlayerScoreTableComponent } from './dailyboard/player-score-table/player-score-table.component';
+import { SubmitGuessFormDialogComponent } from './dailyboard/submit-guess-form-dialog/submit-guess-form-dialog.component';
 
 @NgModule({
   providers: [LeaderboardService, DailyboardService],
@@ -18,6 +19,7 @@ import { PlayerScoreTableComponent } from './dailyboard/player-score-table/playe
     PlayerDetailsComponent,
     LeaderboardTableComponent,
     PlayerScoreTableComponent,
+    SubmitGuessFormDialogComponent,
   ],
   imports: [SharedModule],
 })
