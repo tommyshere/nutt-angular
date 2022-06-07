@@ -45,4 +45,8 @@ export class SubmitGuessFormDialogComponent implements OnInit {
       );
     }
   }
+
+  public onSubmit() {
+    console.log(this.userGuessForm.value.guesses);
+  }
 }

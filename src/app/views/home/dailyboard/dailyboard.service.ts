@@ -14,4 +14,8 @@ export class DailyboardService {
   public getOtherPlayerDetails(): Observable<PlayerDetail[]> {
     return of(otherPlayerData);
   }
+
+  public postUserGuess(data: any) {
+    console.log(data);
+  }
 }
