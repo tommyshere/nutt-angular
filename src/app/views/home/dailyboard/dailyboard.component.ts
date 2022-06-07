@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Subscription, zip } from 'rxjs';
 import { DailyboardService } from './dailyboard.service';
 import { PlayerDetail } from '../../../interface';
+import { MatDialog } from '@angular/material/dialog';
+import { SubmitGuessFormDialogComponent } from './submit-guess-form-dialog/submit-guess-form-dialog.component';
 
 @Component({
   selector: 'app-dailyboard',
@@ -13,7 +15,7 @@ export class DailyboardComponent implements OnInit {
   public myData!: PlayerDetail;
   public otherPlayerDetails!: PlayerDetail[];
 
-  constructor(private dbService: DailyboardService) {}
+  constructor(private dbService: DailyboardService, public dialog: MatDialog) {}
 
   ngOnInit(): void {
     this._rx = zip(
@@ -22,6 +24,14 @@ export class DailyboardComponent implements OnInit {
     ).subscribe(data => {
       this.myData = data[0];
       this.otherPlayerDetails = data[1];
+    });
+  }
+
+  openGuessFormDialog() {
+    this.dialog.open(SubmitGuessFormDialogComponent, {
+      data: this.myData.playDetails,
+      minWidth: '24%',
+      position: { top: '2%' },
     });
   }
 }
